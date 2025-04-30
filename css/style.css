@@ -1,0 +1,298 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Hiragino kaku Gothic ProN", "Hiragino Sans","BIZ UDPGothic",sans-serif; 
+    line-height: 1.7;
+    color:#333;
+   }
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/* layout */
+
+.align-center{
+    text-align: center;
+}
+.head logo{
+    text-align: left;
+}
+/* Title*/
+.font-english{
+    font-family: 'Philosopher',sans-serif;
+    font-weight: normal;
+}
+.heading-medium {
+    font-size: 4rem;
+    text-align: center;
+}
+.page-title{
+    font-size: 4rem;
+    text-align:center;
+    margin-top: 0;
+    line-height: 3;
+    color:#ffffff;
+}
+.heading-large {
+    text-align:center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/*----Button---*/
+.btn {
+    
+    display: inline-block;  
+    font-size: 1.5rem;
+    background-color: #5474e0;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    transition: .5s;
+}
+.btn:hover {
+    background-color: #0090aa;
+    scale:1.2;
+}
+
+/*  Header  */
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.logo{
+    width: 170px;
+}  
+
+.main-nav{
+    display: flex;
+    justify-content:center;
+    gap:2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    list-style: none;
+    
+    }
+.main-nav a{
+    color: #432;
+}
+.main-nav a:hover{
+    color: #0bd;
+}
+/*---Header Cover---*/
+.cover{
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+    
+}
+.sub-cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 528px;
+    margin-bottom: 4rem;
+}
+/* HOME
+------------------------------- */
+.cover-home{
+    background-image: url(../images/istockphoto-987389754-612x612.jpg);
+}
+.about{
+    margin: 4rem auto 0;
+}
+
+.about {  
+    max-width: 800px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 0;
+}
+.about p {    
+    margin-bottom: 3rem;
+}
+
+/*--- Destination---*/
+.cover-destination {
+    background-image: url(../images/waterfall.webp);
+}
+.grid {
+    display: grid;
+    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+.item img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.item p {
+    font-size: .875rem;
+}
+/* Packages
+------------------------------- */
+.cover-packages {
+    background-image: url(../images/Manlay%20Mg.jfif);
+}
+/* CONTACT
+------------------------------- */
+.cover-contact {
+    background-image: url(../images/Myanmar%20snapshot%20cover%20iso.jpg);
+}
+/* Information */
+.location {
+    margin-bottom: 3.5rem;
+}
+.location-info {
+    margin-bottom: 2rem;
+}
+.location-info .info {
+    padding: 0;
+}
+/* Send Message */
+email {
+    max-width: 916px;
+    background-color: #faf7f0;
+    border-radius: 48px;
+    padding: 1.5rem 2.5rem 2.5rem;
+    margin: 0 auto 2rem;
+}
+.email p {
+    margin: 1rem 0 2rem;
+}
+/* SNS */
+.sns-item {
+    margin-bottom: 2rem;
+}
+.sns-item .heading-medium {
+    margin-bottom: .5rem;
+}
+.sns-youtube {
+    aspect-ratio: 16/9;
+}
+.sns-youtube iframe {
+    height: 100%;
+}
+
+
+/* Desktop version
+------------------------------- */
+@media (min-width: 800px) {
+    /* Title */
+    .page-title {
+        font-size: 5rem;
+    }
+    .heading-large {
+        font-size: 4rem;
+    }
+    .post-title {
+        font-size: 2rem;
+    }
+
+    /* Header */
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    }
+    .main-nav {
+        font-size: 2rem;
+    }
+
+    /* Header cover */
+    .sub-cover {
+        height: 400px;
+        margin-bottom: 6rem;
+    }
+/*   Destination  */
+.cover-destination {
+        background-image: url(../images/waterfall.webp);
+    }
+    .grid {
+        gap: 3rem 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item img {
+        margin-bottom: .5rem;
+    }
+    .item p {
+        font-size: 1rem;
+    }
+  /*Packages  */  
+    .cover-packages {
+    background-image: url(../images/Manlay%20Mg.jfif);
+}
+    
+    /* CONTACT */
+    .cover-contact {
+        background-image: url(../images/Myanmar%20snapshot%20cover%20iso.jpg);
+    }
+    .location {
+        display: flex;
+        gap: 2rem;
+    }
+    .location-info {
+        width: 32%;
+    }
+    .location-info .info th {
+        padding-left: 2rem;
+    }
+    .location-map {
+        width: 64%;
+    }
+    .email {
+        margin-bottom: 4rem;
+    }
+    .sns {
+       text-align: center; 
+    }
+    .sns-item {
+        flex: 1;
+    }
+    /*---footer---*/
+.page-footer {
+    background-image: url(../images/image_processing20191001-4-v3b9nw.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 12rem;
+}
+.info th{
+    padding-left: 2.5rem;
+}
+.info {
+    width: 100%;
+    max-width: 544px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+    
+}
+.info th,
+.info td {
+    border-bottom: 1px solid #c9c2bc;
+}
+.info th {
+    text-align: left;
+    font-weight: normal;
+    padding: 1rem;
+}
+.info td {
+    padding: 1rem 0;
+}
+.copyright{
+    background-color: #4b70ea;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 6rem;
+    color: #fff;
+}
